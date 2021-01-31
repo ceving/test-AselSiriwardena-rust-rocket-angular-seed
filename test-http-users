@@ -1,0 +1,10 @@
+#! /bin/bash
+
+exec curl \
+     --silent \
+     --show-error \
+     --noproxy \* \
+     --header "Content-Type: application/json" \
+     --request POST \
+     --data '{}' \
+     http://localhost:8000/api/v1/users
